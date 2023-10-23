@@ -1,21 +1,22 @@
 import React from "react";
 import "./login.page.css";
+import { NavLink } from "react-router-dom";
 
-export const LoginPage = () => {
+const LoginPage = () => {
+  const [showPassword, setShowPassword] = React.useState("password");
   return (
-    <div>
-      <div className="container page">
-        <div className="column">
-          <h1>Sign in</h1>
-          <input></input>
-          <input></input>
-          <p>
-            By continuing, you agree to our User Agreement and acknowledge that
-            you understand the Privacy Policy.
-          </p>
-          <button>Sign in</button>
-        </div>
+    <div className="page">
+      <div className="card">
+        <h1>Sign in</h1>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button>Sign in</button>
+        <p>
+          Don't have an account? Register <NavLink to="/register">here</NavLink>
+        </p>
       </div>
     </div>
   );
 };
+
+export default LoginPage;
