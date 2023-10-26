@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = React.useState("password");
-  return (
+  return (  
     <div className="page">
       <div className="card">
         <h1>Sign in</h1>
