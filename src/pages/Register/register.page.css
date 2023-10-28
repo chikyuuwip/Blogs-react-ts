@@ -7,11 +7,20 @@
   min-height: 63vh;
 }
 
-.birthdate {
-  margin-top: 0px;
+.bd-div {
+  display:flex;
+  flex-direction: column;
 }
 
-/* .bd-label {
+.bd-datepicker {
+  margin-top: 0;
+}
+
+.bd-label {
   color: rgb(58, 58, 58);
-  font-size: 10px !important;
-} */
+  font-size: 12px !important;
+  width: 315px;
+  text-align: start;
+  align-self: center;
+  margin-top: 7px;
+}
